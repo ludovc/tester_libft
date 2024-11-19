@@ -19,6 +19,6 @@ void	ft_isalpha_test(char c)
 int	main()
 {
 	ft_isalpha_test('a');
-	ft_isalpha_test('1');
 	ft_isalpha_test('0');
+	ft_isalpha_test('A');
 }
