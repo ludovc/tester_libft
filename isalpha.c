@@ -7,9 +7,7 @@ void	ft_isalpha_test(char c)
 {
 	int		res1;
 	int		res2;
-	int		ok;
 
-	ok = 1;
 	res1 = isalpha(c);
 	res2 = ft_isalpha(c);
 	printf("\n");
@@ -22,4 +20,5 @@ int	main()
 {
 	ft_isalpha_test('a');
 	ft_isalpha_test('1');
+	ft_isalpha_test('0');
 }
