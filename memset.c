@@ -3,18 +3,7 @@
 #include <stdlib.h>
 
 void	*ft_memset(void *s, int c, size_t n);
-
-void	printbytes(void *s)
-{
-	int		i;
-
-	i = 0;
-	while (((unsigned char *)s)[i])
-	{
-		printf("%d\n", ((unsigned char *)s)[i]);
-		i++;
-	}
-}
+void	printbytes(void *s);
 
 void	memset_test(int c)
 {
