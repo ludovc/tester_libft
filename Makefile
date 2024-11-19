@@ -10,7 +10,7 @@ strlen:
 			cc $(CFLAGS) strlen.c ../ft_strlen.c
 
 memset:
-			cc $(CFLAGS) memset.c
+			cc $(CFLAGS) memset.c ../ft_memset.c
 
 memmove:
 			cc $(CFLAGS) memmove.c
