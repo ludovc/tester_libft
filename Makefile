@@ -12,6 +12,9 @@ strlen:
 memset:
 			cc $(CFLAGS) memset.c ../ft_memset.c printbytes.c
 
+memcpy:
+			cc $(CFLAGS) memcpy.c ../ft_memcpy.c
+
 bzero:
 			cc $(CFLAGS) bzero.c ../ft_bzero.c ../ft_memset.c printbytes.c
 
