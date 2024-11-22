@@ -1,7 +1,13 @@
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 all:
 			@echo "function name?"
+
+strlcat:
+			cc $(CFLAGS) strlcat.c ../ft_strlcat.c ../ft_strlen.c -lbsd
+
+strlcpy:
+			cc $(CFLAGS) strlcpy.c ../ft_strlcpy.c ../ft_strlen.c -lbsd
 
 isalpha:
 			cc $(CFLAGS) isalpha.c ../ft_isalpha.c
