@@ -1,5 +1,13 @@
-#include <string.h>
-#include <stdio.h>
+#include "tester_libft.h"
+
+int		main()
+{
+	char	dest[100] = "zzzzzzzz";
+
+	puts(dest);
+	ft_memcpy(dest, "ciao", 3);
+	puts(dest);
+}
 
 /*
 int		main()
@@ -14,6 +22,7 @@ int		main()
 }
 */
 
+/*
 int		main()
 {
 	char *dest;
@@ -26,3 +35,4 @@ int		main()
 	memcpy(dest, src, 2);
 	printf("\n%s\n", dest);
 }
+*/
