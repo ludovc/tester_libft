@@ -1,13 +1,13 @@
-#include <string.h>
-#include <stdio.h>
+#include "tester_libft.h"
 
 int		main()
 {
-	char	*a;
-	char	*b;
+	char	*dest;
+	char	*src;
 
-	a = strdup("ciao");
-	b = strdup("boh");
-	memmove(a, b, 4);
-	printf("%s\n", b);
+	src = strdup("abc");
+	dest = strdup("def");
+	(void)src;
+	memmove(dest + 1, dest, 2);
+	printf("%s\n", dest);
 }
