@@ -1,16 +1,6 @@
 #include "tester_libft.h"
 
-int		main()
-{
-	char	dest[100] = "zzzzzzzz";
-
-	puts(dest);
-	ft_memcpy(dest, "ciao", 3);
-	puts(dest);
-}
-
-/*
-int		main()
+void	memcpy_test3()
 {
 	char	*s;
 
@@ -20,10 +10,8 @@ int		main()
 	free(s);
 	s = strdup("abcd");
 }
-*/
 
-/*
-int		main()
+void	memcpy_test2()
 {
 	char *dest;
 	char *src;
@@ -35,4 +23,20 @@ int		main()
 	memcpy(dest, src, 2);
 	printf("\n%s\n", dest);
 }
-*/
+
+void	memcpy_test()
+{
+	char	dest[100] = "zzzzzzzz";
+	char	dest2[100] = "zzzzzzzz";
+
+	puts(dest);
+	ft_memcpy(dest, "ciao", 3);
+	puts(dest);
+	memcpy(dest2, "ciao", 3);
+	puts(dest2);
+}
+
+int		main()
+{
+	memcpy_test();
+}
