@@ -1,9 +1,4 @@
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-void	*ft_memset(void *s, int c, size_t n);
-void	printbytes(void *s);
+#include "tester_libft.h"
 
 void	memset_test(int c)
 {
@@ -12,16 +7,16 @@ void	memset_test(int c)
 	s = strdup("ciao");
 	ft_memset(s, c, 2);
 	//printf("%s\n", s);
-	printbytes(s);
+	printbytes(s, 4);
 	free(s);
 	s = strdup("ciao");
 	memset(s, c, 2);
 	//printf("%s\n", s);
 	puts("");
-	printbytes(s);
+	printbytes(s, 4);
 }
 
 int		main()
 {
-	memset_test(-100);
+	memset_test(0);
 }
