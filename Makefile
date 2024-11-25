@@ -1,5 +1,8 @@
 CFLAGS = -Wall -Wextra -Werror -g
 
+strchr:
+			cc $(CFLAGS) strchr.c ../ft_strchr.c
+
 all:
 			@echo "function name?"
 
@@ -25,7 +28,4 @@ bzero:
 			cc $(CFLAGS) bzero.c ../ft_bzero.c ../ft_memset.c printbytes.c
 
 memmove:
-			cc $(CFLAGS) memmove.c ../ft_memcpy.c
-
-strchr:
-			cc $(CFLAGS) strchr.c
+			cc $(CFLAGS) memmove.c ../ft_memmove.c ../ft_memcpy.c

@@ -8,6 +8,6 @@ int		main()
 	src = strdup("abc");
 	dest = strdup("def");
 	(void)src;
-	memmove(dest + 1, dest, 2);
+	ft_memmove(dest + 1, dest, 2);
 	printf("%s\n", dest);
 }

@@ -1,10 +1,11 @@
-#include <stdio.h>
-#include <string.h>
+#include "tester_libft.h"
 
 int		main()
 {
 	char	*s = "hello world!";
-	char	c = 'e';
+	char	c = '\0';
+	char	*res;
 
-	printf("%s\n", strchr(s, c));
+	res = strchr(s, c);
+	printf("%s\n", res);
 }
