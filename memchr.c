@@ -43,5 +43,5 @@ int		main()
 	char	*res;
 
 	res = memchr(mem, 3, sizeof(mem));
-	printbytes(res, 1);
+	printbytes(res, 3);
 }
