@@ -24,6 +24,7 @@ void *ft_memchr2(const void *s, int c, size_t n)
 }
 */
 
+/*
 void	*ft_memchr2()
 {
 	void	*mem;
@@ -31,15 +32,16 @@ void	*ft_memchr2()
 	mem = malloc(1);
 	mem = NULL;
 	return (&mem);
-	/*
-	(void)mem;
-	return (NULL);
-	*/
+	//(void)mem;
+	//return (NULL);
 }
+*/
 
 int		main()
 {
-	//char	mem[] = {0, 1, 2, 3, 4, 5};
+	char	mem[] = {0, 1, 2, 3, 4, 5};
+	char	*res;
 
-	printf("%p\n", ft_memchr2());
+	res = memchr(mem, 3, sizeof(mem));
+	printbytes(res, 1);
 }
