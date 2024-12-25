@@ -5,3 +5,6 @@ all:
 
 %:
 			cc $(CFLAGS) $@.c ../ft_$@.c printbytes.c -lbsd
+
+deps:
+			sudo apt install libbsd-dev
