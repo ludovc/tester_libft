@@ -10,6 +10,8 @@ int	main()
 	while (res[i])
 	{
 		printf("%s\n", res[i]);
+		free(res[i]);
 		i++;
 	}
+	free(res);
 }
