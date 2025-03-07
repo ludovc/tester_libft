@@ -22,6 +22,7 @@ int	main()
 {
 	t_list	*lst;
 
+	lst = NULL;
 	ft_lstadd_back(&lst, ft_lstnew(new_int(1)));
 	ft_lstadd_back(&lst, ft_lstnew(new_int(2)));
 	ft_lstiter(lst, print_lst_int);

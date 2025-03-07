@@ -14,6 +14,7 @@ int	main()
 {
 	t_list	*lst;
 
+	lst = NULL;
 	ft_lstadd_back(&lst, ft_lstnew(strdup("str1")));
 	ft_lstadd_back(&lst, ft_lstnew(strdup("str2")));
 	ft_lstiter(lst, print_lst_str);
