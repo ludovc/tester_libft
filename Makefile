@@ -1,5 +1,9 @@
 CFLAGS = -Wall -Wextra -Werror -g
 
+list:
+			cc $(CFLAGS) list.c ../libft.a
+			./a.out
+
 all:
 			@echo "function name?"
 
